@@ -18,7 +18,7 @@ app.get("/banknifty", async (req, res) => {
       "https://api-t1.fyers.in/data/quotes?symbols=NSE:NIFTYBANK-INDEX",
       {
         headers: {
-          Authorization: `Bearer ${FYERS_TOKEN}`,
+          Authorization: FYERS_TOKEN,
         },
       }
     );
